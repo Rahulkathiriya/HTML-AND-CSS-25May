@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.775);
+    padding: 20px;
+    position: fixed;
+}
+
+/* nav-bar */
+
+.nav {
+
+    width: 65%;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.714);
+}
+
+.nav ul {
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+
+}
+
+.nav ul li {
+    cursor: pointer;
+    font-size: 18px;
+
+
+}
+
+.nav ul li:hover {
+
+    color: white;
+
+}
+
+/* container */
+
+.hero {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(apple/iphone_11_pro_large.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.containe {
+    color: rgba(255, 255, 255, 0.875);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    letter-spacing: 1.4px;
+
+
+}
+
+.containe h1 {
+
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.884);
+}
+
+.containe h2 {
+
+    padding: 10px 0;
+}
+
+.containe p {
+
+    margin-top: 10px;
+    color: rgba(220, 212, 212, 0.768);
+}
+
+.anchor {
+
+    margin: 20px;
+}
+
+.anchor a {
+    font-size: 20px;
+    margin: 10px;
+    color: rgb(72, 109, 197);
+    text-decoration: none;
+
+}
+
+.anchor a:hover {
+
+    text-decoration: underline;
+}
+
+
+.iphone11 {
+
+    width: 100%;
+    height: 740px;
+    background-image: url(apple/iphone_11_large.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+
+}
+
+.info {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.title2 {
+
+    padding: 40px 0;
+    letter-spacing: 1.4px;
+}
+
+.title2 h1 {
+
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.title2 h2 {
+
+    padding: 10px 0;
+}
+
+.title2 p {
+    color: rgba(18, 17, 17, 0.849);
+
+}
+
+.anchor2 {
+
+    margin: 20px;
+    font-size: 20px;
+}
+
+.anchor2 a {
+
+    padding: 0 10px;
+    color: rgb(72, 109, 197);
+    text-decoration: none;
+}
+
+.anchor2 a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+.iwatch {
+    width: 100%;
+    height: 750px;
+    background-image: url(apple/watch_large.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    letter-spacing: 1.4px;
+}
+
+
+.watch {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.watch img {
+
+    margin-bottom: 20px;
+}
+
+.watch h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.anchor3 {
+
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.anchor3 a {
+
+    padding: 0 6px;
+    text-decoration: none;
+    color: rgb(72, 109, 197);
+    font-weight: 400;
+}
+
+.anchor3 a:hover {
+
+    text-decoration: underline;
+}
+
+
+.mac-book {
+
+    width: 100%;
+    height: 780px;
+    background-image: url(apple/hero_mbp13__f88jcbca0ve6_medium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    letter-spacing: 1.4px;
+}
+
+.mac {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+
+.mac h1 {
+
+    font-size: 65px;
+}
+
+.mac img {
+
+    width: 400px;
+    cursor: pointer;
+}
+
+.mac p {
+
+    color: rgba(221, 221, 221, 0.783);
+    font-size: 25px;
+    margin-left: -38px;
+}
+
+.anchor4 {
+
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.anchor4 a {
+
+    padding: 0 6px;
+    text-decoration: none;
+    color: rgb(72, 109, 197);
+}
+
+.anchor4 a:hover {
+
+    text-decoration: underline;
+}
+
+.i13-pro {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+    letter-spacing: 1.4px;
+
+
+}
+
+.iphone13 {
+    width: 49%;
+    height: 600px;
+    background-image: url(apple/promo_iphone13pro_avail__beadms4ldidu_medium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+
+
+}
+
+.iphone13 h1 {
+
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+.iphone13 p {
+
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.anchor5 {
+
+
+    margin: 15px 0;
+    font-size: 20px
+}
+
+.anchor5 a {
+
+    padding: 0 6px;
+    text-decoration: none;
+    color: rgb(72, 109, 197);
+}
+
+.anchor5 a:hover {
+
+    text-decoration: underline;
+}
+
+.watch-7 {
+
+    width: 49%;
+    height: 600px;
+    background-image: url(apple/promo_watch_lte__djeaso7ukrsm_medium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    padding-left: 100px;
+
+
+}
+
+.watch-7 img {
+
+    width: 200px;
+    cursor: pointer;
+}
+
+.watch-7 p {
+
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 18px;
+
+}
+
+.anchor6 {
+
+
+    margin: 15px 0;
+    font-size: 20px
+}
+
+.anchor6 a {
+
+    padding: 0 6px;
+    text-decoration: none;
+    color: rgb(72, 109, 197);
+}
+
+.anchor6 a:hover {
+
+    text-decoration: underline;
+}
+
+.ipad-macStudio {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+    letter-spacing: 1.4px;
+
+
+}
+
+.ipad {
+    width: 49%;
+    height: 600px;
+    background-image: url(apple/promo_ipadair_avail__ferd4bfpcdm6_medium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    color: #fff;
+
+
+}
+
+.ipad h1 {
+
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+.ipad p {
+
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.anchor7 {
+
+
+    margin: 15px 0;
+    font-size: 20px
+}
+
+.anchor7 a {
+
+    padding: 0 6px;
+    text-decoration: none;
+    color: rgb(72, 109, 197);
+}
+
+.anchor7 a:hover {
+
+    text-decoration: underline;
+}
+
+.macStudio {
+
+    width: 49%;
+    height: 600px;
+    background-image: url(apple/promo_macstudio_avail__byhwkp0o4gty_medium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+
+}
+
+.macSudio img {
+
+    width: 200px;
+    cursor: pointer;
+}
+
+.macStudio h1 {
+
+    font-size: 60px;
+    font-weight: 700;
+
+}
+
+.macStudio p {
+
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 16px;
+
+}
+
+.anchor8 {
+
+
+    margin: 15px 0;
+    font-size: 20px
+}
+
+.anchor8 a {
+
+    padding: 0 6px;
+    text-decoration: none;
+    color: rgb(72, 109, 197);
+}
+
+.anchor8 a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* FOOTER  */
+
+
+.footer {
+
+    width: 100%;
+    height: 450px;
+    background-color: rgba(238, 238, 238, 0.888);
+    margin-top: 12px;
+}
+
+.row {
+
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.row h4 {
+
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.559);
+}
+
+
+.row ul {
+
+    list-style: none;
+    padding: 12px 0;
+    color: rgba(0, 0, 0, 0.661);
+    font-size: 13px;
+}
+
+.row ul li {
+
+    padding: 6px 2px;
+    cursor: pointer;
+}
+
+.row ul li:hover {
+
+    text-decoration: underline;
+}
+
+span {
+
+    color: rgb(72, 109, 197);
+    cursor: pointer;
+}
+
+span:hover {
+
+    text-decoration: underline;
+}
+
+.foot-info {
+
+    margin-left: 25%;
+}
+
+.foot-info p {
+
+    color: rgba(0, 0, 0, 0.661);
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+.last {
+
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+
+}
+
+.last ul {
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    list-style: none;
+    padding-left: 40px;
+
+}
+
+.last ul li {
+    color: rgba(0, 0, 0, 0.663);
+    cursor: pointer;
+}
+
+.last ul li:hover {
+    text-decoration: underline;
+}

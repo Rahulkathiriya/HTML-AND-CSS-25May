@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(0, 0, 0, 0.607);
+        }
+
+        .navbar ul {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+
+        .menu li {
+            color: rgba(255, 255, 255, 0.75);
+            list-style: none;
+            cursor: pointer;
+            font-size: 17px;
+
+        }
+
+        .menu li:hover {
+
+            color: #fff;
+
+        }
+
+        .main {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .main ul {
+            top: 0%;
+            left: 100%;
+            position: absolute;
+            padding: 10px 100px;
+            background-color: rgba(0, 0, 0, 0.607);
+            border-radius: 5px;
+            display: none;
+        }
+
+        .inner-li {
+            padding: 8px 0px;
+            align-items: center;
+        }
+
+        .main:hover ul {
+            display: block;
+            transition-duration: 1s;
+        }
+
+
+        .inner-li:hover {
+            color: #fff;
+            transform: scale(1.1);
+            transition-duration: .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li>Home</li>
+            <li class="main">iPhone
+                <ul>
+                    <li class="inner-li">iPhone 11</li>
+                    <li class="inner-li">iPhone 11 pro</li>
+                    <li class="inner-li">iPhone 11 pro max</li>
+                    <li class="inner-li">iPhone 12</li>
+                    <li class="inner-li">iPhone 12 pro</li>
+                    <li class="inner-li">iPhone 12 pro max</li>
+                    <li class="inner-li">iPhone 13</li>
+                    <li class="inner-li">iPhone 13 pro</li>
+                    <li class="inner-li">iPhone 13 pro max</li>
+                </ul>
+            </li>
+            <li>i Watch</li>
+            <li>Airpods</li>
+            <li>About</li>
+            <li>Contect</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
