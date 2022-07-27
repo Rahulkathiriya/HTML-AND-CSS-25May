@@ -337,6 +337,11 @@ p {
         padding: 1.6rem 0;
 
     }
+
+    .inner-text p {
+
+        font-size: 0.6rem;
+    }
 }
 
 @media screen and (min-width:576px) {
@@ -798,7 +803,7 @@ p {
 
 @media screen and (min-width:992px) {
 
-    .footer-title{
+    .footer-title {
         width: 50%;
     }
 
