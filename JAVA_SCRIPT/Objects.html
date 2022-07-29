@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+        // Create Object
+
+        let userInformation = {
+
+            firstName: "Rahul",
+            lastName: "kathiriya",
+            city: "surat",
+            birthYear: 1999,
+            age: function () {
+                return 2022 - userInformation.birthYear
+            },
+        };
+        console.log(userInformation);
+        userInformation.city = "banglore";
+        console.log("birthyear : " + userInformation.age());
+
+        function details() {
+
+            return `My name is ${userInformation.firstName} ${userInformation.lastName} and i live in ${userInformation.city} and i am ${userInformation.age()} year old.`;
+        };
+        console.log(details());
+
+
+    </script>
+
+</body>
+
+</html>

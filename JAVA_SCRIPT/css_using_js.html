@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="Body">
+
+    <button onclick="black()" id="First">
+        Submit black
+    </button>
+
+    <button onclick="red()" id="Second">
+        Reset red
+    </button>
+
+
+
+    <script>
+
+        let button = document.getElementById("Body");
+
+        function black() {
+            button.style.backgroundColor = "black";
+            First.style.padding = "12px";
+            First.style.color = "#fff";
+            First.style.backgroundColor = "red";
+            First.style.borderRadius = "10px";
+        }
+
+        function red() {
+            button.style.backgroundColor = "red";
+            Second.style.padding = "12px";
+            Second.style.backgroundColor = "black";
+            Second.style.color = "#fff";
+            Second.style.borderRadius = "10px";
+            Second.style.borderColor = "#fff";
+        }
+
+
+    </script>
+</body>
+
+</html>
