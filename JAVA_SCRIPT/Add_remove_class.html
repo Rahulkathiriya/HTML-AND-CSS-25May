@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px;
+            color: black;
+            font-weight: 600;
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .extraCss {
+            color: red;
+            background-color: black;
+            padding: 10px 40px;
+            font-size: 45px;
+            font-family: arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="addCss()">addStyle</button>
+        <button onclick="removeCss()">RemoveStyle</button>
+        <button onclick="addRemoveCss()">addRemoveStyle</button>
+    </div>
+    <h1 class="head"></h1>
+
+    <script>
+
+        let head = document.querySelector(".head");
+        function addCss() {
+
+            head.classList.add("extraCss");
+            head.textContent = "My Name is Rahul Kathirya.";
+
+        }
+
+        function removeCss() {
+            head.classList.remove("extraCss");
+        }
+
+        function addRemoveCss() {
+            head.textContent = "My Name is Rahul Kathirya.";
+            head.classList.toggle("extraCss");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

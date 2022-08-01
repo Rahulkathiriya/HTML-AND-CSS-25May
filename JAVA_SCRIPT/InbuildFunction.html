@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <button onclick="showAlert()" class="firstOne">
+        show Button
+    </button>
+
+    <button onclick="showConfirm()" class="true-false">Notification</button>
+
+    <h1 class="head"></h1>
+
+
+
+    <script>
+
+        //====  Alert =====
+
+        function showAlert() {
+
+            alert("Enable notifiction..?");
+
+        }
+
+        // ====== Confirm =======
+
+        let bodyTag = document.querySelector(".body");
+        let head = document.querySelector(".head");
+
+        function showConfirm() {
+            let checkColor = confirm("Enable notification for get update....");
+
+            if (checkColor) {
+                bodyTag.style.backgroundColor = "green";
+                head.textContent = "Confirm..👍"
+            }
+            else {
+
+                bodyTag.style.backgroundColor = "red";
+                head.textContent = "Error.........."
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
