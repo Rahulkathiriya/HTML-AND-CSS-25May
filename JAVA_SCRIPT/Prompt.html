@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="username()">Enter Name</button>
+    <h2 class="ussername"></h2>
+
+    <script>
+        let head = document.querySelector(".ussername");
+
+        let username = () =>{
+            let username = prompt("Enter Your Name");
+            head.textContent = username;
+            // head.textContent = console.log("Name : " + username);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // 1 --> Simple Way
+
+        function userName(firstName, lastName) {
+            console.log(`My name is ${firstName} ${lastName}.`);
+        }
+
+        userName("Rahul", "Kathiriya");
+
+
+        // 2 -->  Store Function in variable
+
+        let username = function (fname, lname) {
+            console.log(`My name is ${fname} ${lname}.`);
+
+        }
+
+        username("Rahul", "Patel");
+
+
+        //   3 --> Arrow function
+
+        let message = (fname, lname) => {
+            console.log(`My name is ${fname} ${lname}.`);
+
+        }
+
+        message("Ravi", "patel");
+
+    </script>
+
+</body>
+
+</html>
