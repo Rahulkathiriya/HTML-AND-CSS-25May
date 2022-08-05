@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .loading {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 0.6s;
+        }
+
+        .hideLoading {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(2);
+        }
+
+        div {
+
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading">
+        <img src="loading.gif" class="myimg" alt="">
+    </div>
+    <div>
+        <img src="https://source.unsplash.com/random" alt="">
+        <img src="https://source.unsplash.com/random" alt="">
+        <img src="https://source.unsplash.com/random" alt="">
+        <img src="https://source.unsplash.com/random" alt="">
+    </div>
+
+    <script>
+
+        let loading = document.querySelector(".loading");
+        window.addEventListener("load", () => {
+
+            // loading.style.display = "none";
+            loading.classList.add("hideLoading");
+
+        });
+    </script>
+</body>
+
+</html>
