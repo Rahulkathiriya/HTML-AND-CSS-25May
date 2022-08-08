@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .info {
+        background-color: rgb(164, 10, 10);
+        color: #fff;
+        padding: 20px;
+    }
+    h2{
+        font-size: 30px;
+        padding-left: 60px;
+    }
+</style>
+
+<body>
+
+    <div class="info">
+
+        <h2></h2>
+        <h1>Name : Rahul kathiriya</h1>
+        <h1>Age : 21 </h1>
+        <h1>Course : Web Developer </h1>
+    </div>
+
+    <script>
+        let info = document.querySelector(".info");
+        let date = document.querySelector("h2");
+
+        setTimeout(() => {
+            info.style.backgroundColor = "#fff";
+            info.style.color = "black";
+        }, 3000);
+
+        let myDate = new Date;
+        console.log(myDate.toLocaleTimeString());
+
+        setInterval(() => {
+
+            let myDate = new Date();
+            date.textContent = myDate.toLocaleTimeString();
+
+        }, 1000);
+
+
+    </script>
+
+</body>
+
+</html>

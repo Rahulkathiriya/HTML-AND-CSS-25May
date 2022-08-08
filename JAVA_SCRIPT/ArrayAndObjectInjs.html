@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        .cart {
+            padding: 50px;
+            box-shadow: 0 10px 10px -5px black;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+    <script>
+
+        let Apple = {
+
+            companyName: "Apple",
+            modelName: "iPhone 13",
+            mobileStorage: "128 Gb",
+            price: "1,00,000"
+        };
+        let Samsung = {
+
+            companyName: "Samsung",
+            modelName: "Galaxy S21 pro",
+            mobileStorage: "128 Gb 8Gb",
+            price: "1,21,000"
+        };
+        let OnePlus = {
+
+            companyName: "OnePlus",
+            modelName: "OnePlus 8+",
+            mobileStorage: "128 Gb 8Gb",
+            price: "50,000"
+        };
+        let GooglePixel = {
+
+            companyName: "GooglePixel",
+            modelName: "GooglePixel",
+            mobileStorage: "128 Gb 8Gb",
+            price: "1,32,000"
+        };
+
+        let mobile = [Apple, Samsung, OnePlus, GooglePixel];
+        let container = document.querySelector(".container");
+
+        // console.log(mobile[0].price);
+
+        for (let SinglemobileData of mobile) {
+
+
+            let mobileData = `
+            <div class="cart">
+            <h3>companyName :${SinglemobileData.companyName}</h3>
+            <h4>modelName : ${SinglemobileData.modelName}</h4>
+            <p>mobileStorage : ${SinglemobileData.mobileStorage}</p>
+            <p>price : ${SinglemobileData.price}</p>
+        </div>
+            `;
+
+            container.insertAdjacentHTML("beforeend", mobileData);
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
