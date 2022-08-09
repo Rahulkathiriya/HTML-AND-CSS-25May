@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" datatype="light">
 
 <head>
     <meta charset="UTF-8">
@@ -29,18 +29,18 @@
                     <img src="image/logo.png" alt="">
                     <span>Online Study</span>
                 </div>
-                <ul class="menu">
-                    <li class="First-child"><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Log pots</a></li>
-                    <li><a href="">Pages <i class="fa-solid fa-angle-down arrow"></i></a></li>
-                    <li><a href="">Contect</a></li>
+                <ul class="menu" class="resbtn">
+                    <li class="First-child"><a href="" class="a">Home </a></li>
+                    <li><a class="a">About</a></li>
+                    <li><a class="a">Log pots</a></li>
+                    <li class="sublist"><a class="a">Pages <i class="fa-solid fa-angle-down arrow"></i></a></li>
+                    <li><a href="" class="a">Contect</a></li>
                 </ul>
 
                 <div class="right-icon">
                     <ul>
                         <li><button class="btn">Search</button></li>
-                        <li><i class="fa-solid fa-moon moon"></i></li>
+                        <li><i class="fa-solid fa-moon moon" onclick="DarkmodeOnOff()"></i></li>
                         <li>
                             <button class="btn-menu"><i class="fa fa-bars"></i></button>
                         </li>
@@ -244,7 +244,7 @@
 
     <!-- ========================  FOOTER ====================== -->
 
-    <div class="section main-footer"> 
+    <div class="section main-footer">
         <div class="container">
             <footer class="footer-section">
                 <div class="footer-title">
@@ -303,6 +303,23 @@
 
         </div>
     </div>
+
+    <script>
+        let header = document.querySelector("header");
+        let body = document.querySelector("body");
+        let anchor = document.querySelectorAll("a");
+        let html = document.querySelector("html");
+
+        function DarkmodeOnOff() {
+
+            body.classList.toggle("body");
+            header.classList.toggle("headerDark");
+            for (const singleAnchor of anchor) {
+                singleAnchor.classList.toggle("menu-li-a");
+            }
+        }
+
+    </script>
 </body>
 
 </html>
