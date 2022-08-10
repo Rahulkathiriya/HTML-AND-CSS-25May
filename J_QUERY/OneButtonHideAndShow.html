@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .mainClass {
+
+            width: 50%;
+            height: 250px;
+            background-image: linear-gradient(45deg, black 40%, blue 70%);
+            padding: 30px;
+            margin: 200px auto;
+            transition: 0.6s;
+        }
+
+        .mainClass:hover {
+            box-shadow: 0 10px 10px -5px black;
+            transform: scale(1.2);
+        }
+
+        .extra {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+
+            border: none;
+            margin-bottom: 6px;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: burlywood;
+
+        }
+
+        .subClass {
+
+            width: 30%;
+            border-radius: 10px;
+            padding: 15px 50px;
+            background: green;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+
+            $("button").click(function () {
+
+                $(".subClass").toggle(500);
+
+
+            })
+        })
+
+
+    </script>
+</head>
+
+<body>
+    <div class="mainClass">
+        <div class="extra">
+            <button>
+                Hide And Show Information
+            </button>
+
+            <div class="subClass">
+                <p>Rahul kathiriya</p>
+                <p>I am a web developer</p>
+                <p>Start in year 2021</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
