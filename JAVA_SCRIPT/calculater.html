@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            background-color: rgba(0, 0, 0, 0.546);
+            padding: 20px;
+            margin: 150px auto;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 97%;
+            margin: 20px 0;
+            padding: 10px;
+            font-size: 40px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background-color: black;
+            color: rgba(255, 255, 255, 0.82);
+        }
+
+        button {
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            font-weight: 600;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: black;
+            color: rgba(255, 255, 255, 0.775);
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.526);
+        }
+
+        button:active {
+            background-color: rgba(105, 18, 18, 0.749);
+
+        }
+
+        .heading {
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 0 10px 2px rgba(255, 255, 255, 0.286);
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td colspan="4" class="heading">CALCULATER</td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" id="result"></td>
+        </tr>
+        <tr>
+            <td> <button class="button" value="(">(</button></td>
+            <td> <button class="button" value=")">)</button></td>
+            <td> <button class="clear" value="C" onclick="clearScreen()">C</button></td>
+            <td> <button class="operetor" value="%">%</button></td>
+
+        </tr>
+        <tr>
+            <td> <button class="button" value="7" onclick="display('7')">7</button></td>
+            <td> <button class="button" value="8" onclick="display('8')">8</button></td>
+            <td> <button class="button" value="9" onclick="display('9')">9</button></td>
+            <td> <button class="operetor" value="*" onclick="display('*')">*</button></td>
+
+        </tr>
+        <tr>
+            <td> <button class="button" value="4" onclick="display('4')">4</button></td>
+            <td> <button class="button" value="5" onclick="display('5')">5</button></td>
+            <td> <button class="button" value="6" onclick="display('6')">6</button></td>
+            <td> <button class="operetor" value="-" onclick="display('-')">-</button></td>
+
+        </tr>
+        <tr>
+            <td> <button class="button" value="1" onclick="display('1')">1</button></td>
+            <td> <button class="button" value="2" onclick="display('2')">2 </button></td>
+            <td> <button class="button" value="3" onclick="display('3')">3</button></td>
+            <td> <button class="operetor" value="+" onclick="display('+')">+</button></td>
+
+        </tr>
+        <tr>
+            <td> <button class="button" value="0" onclick="display('0')">0</button></td>
+            <td> <button class="button" value="." onclick="display('.')">.</button></td>
+            <td> <button class="button" value="/" onclick="display('/')">/</button></td>
+            <td><button class="operetor" value="=" onclick="solve()">=</button></td>
+
+        </tr>
+    </table>
+    <script src="calculater.js"></script>
+
+</body>
+
+</html>
