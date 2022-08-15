@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+
+    <style>
+        :root {
+            --CommonColor: gray;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .allImg {
+            display: grid;
+            gap: 20px;
+            width: 600px;
+        }
+
+        .allImg {
+
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--CommonColor);
+
+        }
+
+        img {
+
+            width: 300px;
+        }
+
+        .commonCss {
+            display: flex;
+            gap: 30px;
+            align-items: center; 
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $(".fi").click(function () {
+                $(".img1").append("<p> Name : Charvik kakadiya </p> </br> <p> BirthDate : 18 Jan 2021. </p>");
+            });
+        });
+        $(document).ready(function () {
+            $(".si").click(function () {
+                $(".img2").append("<p> Name : Charvik kakadiya </p> </br> <p> BirthDate : 18 Jan 2021. </p>");
+            });
+        });
+        $(document).ready(function () {
+            $(".ti").click(function () {
+                $(".img3").append("<p> Name : Charvik kakadiya </p> </br> <p> BirthDate : 18 Jan 2021. </p>");
+            });
+        });
+        $(document).ready(function () {
+            $(".foi").click(function () {
+                $(".img4").append("<p> Name : Charvik kakadiya </p> </br> <p> BirthDate : 18 Jan 2021. </p>");
+            });
+        });
+    </script>
+</head>
+
+<body1>
+    <div class="allImg">
+        <div class="commonCss">
+            <img src="img/5.JPG" class="fi">
+            <p class="img1"></p>
+        </div>
+        <div class="commonCss">
+            <img src="img/6.JPG" class="si">
+            <p class="img2"></p>
+        </div>
+        <div class="commonCss">
+            <img src="img/7.JPG" class="ti">
+            <p class="img3"></p>
+        </div>
+        <div class="commonCss">
+            <img src="img/8.JPG" class="foi">
+            <p class="img4"></p>
+        </div>
+
+
+    </div>
+    </body>
+
+</html>

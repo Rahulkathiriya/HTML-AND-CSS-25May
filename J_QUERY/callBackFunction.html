@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .mainclass {
+
+        width: 100%;
+        height: 400px;
+    }
+
+    .container {
+
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: azure;
+        gap: 50px;
+        height: 100%;
+        margin: 200px auto;
+        height: 100%;
+        padding: 20px;
+        box-shadow: 0 10px 10px -5px black;
+    }
+
+    div {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    h1 {
+        cursor: pointer;
+        font-size: 30px;
+        padding: 10px 0;
+        font-weight: 600;
+        background-color: rgb(221, 221, 221);
+        border-bottom: 4px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .fadein {
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: gray;
+    }
+
+
+    .fadein p {
+        padding: 10px;
+
+    }
+
+    .jsH1 {
+        background-color: #fff;
+    }
+</style>
+<script src="jquery.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+        $(".zero").click(function () {
+
+            $(".subdiv1").hide(function () {
+                alert("FullStack Information is hide.");
+            });
+        });
+
+        $(".fi").click(function () {
+
+            $(".subdiv2").hide(function () {
+                alert("Java information is hide...");
+            });
+
+        });
+
+        $(".sec").click(function () {
+
+            $(".subdiv3").hide(function () {
+                alert("WebDesigner information is hide...");
+            });
+        });
+
+        $(".th").click(function () {
+
+            $(".subdiv4").hide(function () {
+                alert("JAvaScript information is hide...");
+            });
+        });
+    });
+
+
+</script>
+
+<body>
+
+    <div class="mainclass">
+        <div class="container">
+            <div class="div1">
+                <h1 class="zero"> FULL STACK </h1>
+                <div class="subdiv1 fadein">
+                    <p>My name is Rahul kathiriya,</p>
+                    <p>I am a web developer,</p>
+                    <p>started development in year 2021.</p>
+                </div>
+            </div>
+            <div class="div1">
+                <h1 class="fi"> JAVA </h1>
+                <div class="subdiv2 fadein">
+                    <p>My name is Ravi patel,</p>
+                    <p>I am a java developer,</p>
+                    <p>started development in year 2020.</p>
+                </div>
+            </div>
+            <div class="div1">
+                <h1 class="sec"> WEB DESIGNER </h1>
+                <div class="subdiv3 fadein">
+                    <p>My name is Jency patel,</p>
+                    <p>I am a web designer,</p>
+                    <p>started development in year 2021.</p>
+                </div>
+            </div>
+            <div class="div1">
+                <h1 class="th"> JAVA SCRIPT </h1>
+                <div class="subdiv4 fadein">
+                    <p>My name is Parth patel,</p>
+                    <p>I am a frontend developer,</p>
+                    <p>started development in year 2021.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

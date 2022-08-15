@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        .container {
+
+            width: 700px;
+            height: 100vh;
+            background-color: gray;
+        }
+
+        img {
+            width: 300px;
+            cursor: pointer;
+
+        }
+
+        .imgs {
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+        }
+
+        .pics {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+
+            $(".first").click(function () {
+
+                $(".first").after("<div><b><p> Name : Charvik kakadiya </p><p> BirthDate : 18th jan 2021</p><p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </b></div>");
+            });
+            $(".second").click(function () {
+
+                $(".second").after("<div><b><p> Name : Charvik kakadiya </p><p> BirthDate : 18th jan 2021</p><p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </b></div>");
+            });
+            $(".third").click(function () {
+
+                $(".third").after("<div><b><p> Name : Charvik kakadiya </p><p> BirthDate : 18th jan 2021</p><p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </b></div>");
+            });
+            $(".four").click(function () {
+
+                $(".four").after("<div><b><p> Name : Charvik kakadiya </p><p> BirthDate : 18th jan 2021</p><p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> </b></div>");
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="imgs">
+            <div class="pics">
+                <img src="img/5.JPG" class="first">
+            </div>
+            <div class="pics">
+                <img src="img/6.JPG" class="second">
+            </div>
+            <div class="pics">
+                <img src="img/7.JPG" class="third">
+            </div>
+            <div class="pics">
+                <img src="img/8.JPG" class="four">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
