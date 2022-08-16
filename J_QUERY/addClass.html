@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="jquery.js"></script>
+
+    <style>
+        .container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn {
+
+            padding: 10px;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            background-color: yellow;
+            font-weight: 600;
+        }
+
+        .btn3 {
+
+            padding: 10px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: green;
+            cursor: pointer;
+
+
+
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".btn").click(function () {
+
+                $(".btn2").addClass("btn3");
+
+            });
+
+        });
+
+    </script>
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <button class="btn"> AddClass
+        </button>
+        <button class="btn2"> Button
+        </button>
+        <div class="btn2">
+
+            <h1 class="btn2">Rahul kathiriya</h1>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
