@@ -20,6 +20,6 @@ function solve() {
 
 function clearScreen() {
 
-    result.value = ' ';
+    result.value = '';
 
 }
