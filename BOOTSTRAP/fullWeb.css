@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.686);
+}
+
+.fa-dog {
+    font-size: 2.6rem;
+    color: orangered;
+}
+
+a {
+    font-size: 1.3rem !important;
+    transition: 0.6s ease !important;
+}
+
+a:hover {
+    color: rgb(255, 115, 0) !important;
+}
+
+.nav-fi {
+    color: rgb(255, 115, 0) !important;
+}
+
+.logo-title {
+
+    color: rgb(126, 118, 112) !important;
+    cursor: pointer;
+}
+
+.logo-title:hover {
+    color: #fff !important;
+    transition: 00.6s ease !important;
+}
+
+@media screen and (min-width: 762px) {
+    .carousel-item {
+
+        height: 100vh;
+    }
+    
+
+    .navbar-nav {
+        padding-left: 25%;
+    }
+
+    .h5 {
+        width: 40%;
+        margin-top: 18rem !important;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        animation-name: effect;
+        animation-duration: 1.5s;
+    }
+}
+
+span {
+    color: orangered;
+}
+
+@media screen and (max-width:662px) {
+
+    .title-text {
+        padding-top: 5rem !important;
+        color: black;
+        font-size: 2.5rem !important;
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+
+    .title-text {
+        padding-top: 5rem !important;
+        color: black;
+        font-size: 2.5rem !important;
+    }
+
+    .head {
+        left: 0;
+    }
+}
+
+@keyframes effect {
+
+    from {
+
+        transform: scale(0) rotateZ(0);
+    }
+
+    to {
+        transform: scale(1) rotate3d(0, 1, 0, (360deg));
+
+    }
+
+}
+
+
+.dog-container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+.btns {
+
+    background-color: orangered;
+    border: none;
+    padding: 0.6rem 0rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    transition: 0.5s ease;
+}
+
+.btns:hover {
+
+    transform: scale(1.1);
+    color: black !important;
+    box-shadow: 0rem 1rem 1rem -1rem black !important;
+}
+
+.h3 {
+
+    margin-top: 6rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.fa-medrt {
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 2rem;
+    background-color: #ced0ff;
+    border-radius: 65% 35% 32% 68% / 62% 56% 44% 38%;
+}
+
+.fa-medal {
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 2rem;
+    color: #ff4f81;
+    background-color: #f4c0cf;
+    border-radius: 65% 35% 32% 68% / 62% 56% 44% 38%;
+}
+
+.fa-bone {
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 2rem;
+    color: #0abf53;
+    background-color: #beffd8;
+    border-radius: 65% 35% 32% 68% / 62% 56% 44% 38%;
+}
+
+.fa-paw {
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 2rem;
+    color: #ff9933;
+    background-color: #ffddbb;
+    border-radius: 65% 35% 32% 68% / 62% 56% 44% 38%;
+}
+
+.inner-content p {
+
+    font-weight: bold;
+    padding-top: 1.3rem;
+    font-size: 1.6rem;
+}
