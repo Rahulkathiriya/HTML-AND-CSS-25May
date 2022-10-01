@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Parent {
+            width: 100%;
+            height: 100vh;
+            background: black;
+            color: #fff;
+        }
+
+        .childs {
+
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .first-child p,
+        .second-child p,
+        .third-child p {
+
+            font-size: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Parent">
+        <div class="childs">
+            <div class="first-child">
+                <p onclick="ClickOne()">I am first child.</p>
+
+            </div>
+            <div class="second-child">
+                <p onclick="ClickTwo()">I am second child.</p>
+            </div>
+            <div class="third-child">
+                <p onclick="ClickThree()">I am third child.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    let one = document.querySelector(".first-child");
+    let two = document.querySelector(".second-child");
+    let three = document.querySelector(".third-child");
+
+    let ClickOne = () => {
+        one.style.color = "Red";
+        one.innerHTML = "YES, I AM FIRST CHILD";
+        one.style.fontSize = "30px";
+    };
+
+    let ClickTwo = () => {
+        two.style.color = "green";
+        two.innerHTML = "I AM SECOND CHILD";
+        two.style.fontSize = "30px";
+    };
+    let ClickThree = () => {
+        three.style.color = "yellow";
+        three.innerHTML = "I AM THIRD CHILD";
+        three.style.fontSize = "30px";
+    };
+
+
+    // Task --> Element have a childNods or not ?.
+    // --> Ans. document.body.hasChildNodes();  <<== in console
+
+</script>
+
+</html>

@@ -7,7 +7,6 @@ function display(val) {
     return val;
 }
 
-
 function solve() {
 
     let x = result.value;
