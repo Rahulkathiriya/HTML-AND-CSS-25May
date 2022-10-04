@@ -13,18 +13,27 @@ header {
 }
 
 html {
-
     scroll-behavior: smooth;
 }
+
+/* nav_scroll */
+
+
+.headerColor {
+
+    background-color: var(--secondary-color) !important;
+    transition: 0.5s ease;
+}
+
+.nav-btn {
+    background-color: var(--primary-color) !important;
+    transition: 0.5s ease;
+}
+
 
 /* media screen for all section */
 
 @media screen and (min-width:1200px) {
-
-    .menu-img {
-
-        padding-top: 3rem;
-    }
 
     .main-section {
         padding-top: 10rem !important;
@@ -40,7 +49,42 @@ html {
         height: 75vh !important;
     }
 
+    .menu-img img {
+
+        width: 100%;
+        height: 100vh;
+
+
+
+    }
+
 }
+
+
+
+@media screen and (max-width:768px) {
+
+    .menu-img {
+
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .menu-img img {
+
+        width: 100%;
+        height: auto;
+        padding-top: 3rem;
+    }
+
+    .xs-screen {
+        display: grid;
+    }
+
+
+}
+
 
 
 
@@ -55,7 +99,7 @@ html {
 
 .head-color ul li a:hover {
 
-    color: var(--secondary-color);
+    color: black;
 
 }
 
@@ -83,7 +127,7 @@ html {
 
 .main-section {
     height: auto;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .about-section-img img {
@@ -102,17 +146,8 @@ html {
 }
 
 .img-box img:hover {
+
     transform: scale(1.3);
-}
-
-
-@media screen and (max-width: 765px) {
-
-    .banner-section-img {
-        margin-top: 10rem !important;
-    }
-
-
 }
 
 .banner-section-img img {
@@ -128,6 +163,21 @@ html {
     font-weight: 700;
     padding-top: 8rem;
     padding-bottom: 4rem;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .menu-title h2 {
+
+        padding-top: 3rem;
+        padding-bottom: 1.6rem;
+        font-size: 2rem;
+
+    }
+
+
+
 }
 
 .pizza-item {
@@ -155,6 +205,132 @@ html {
     border-radius: 0 0 50% 50%;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+}
+
+@media screen and (max-width:768px) {
+
+    .selling-section {
+
+        margin-top: 2rem !important;
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .selling-row {
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 2rem;
+    }
+
+    .quality-section-title {
+
+        margin-top: 2rem;
+    }
+
+    .quality-section-title span {
+
+        margin-top: 2rem !important;
+        font-size: 1.2rem !important;
+
+    }
+
+    .quality-section-title div {
+
+        padding-top: 1rem;
+        font-size: 1.8rem !important;
+        width: 100% !important;
+    }
+
+    .quality-section-title p {
+
+        max-width: 100% !important;
+    }
+
+    .pillow {
+
+        display: gird;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .store-link {
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem !important;
+
+    }
+
+    .store-link div img {
+
+        width: 90% !important;
+        padding-left: 1rem;
+
+    }
+
+    .app-p span {
+
+        margin-top: 2rem !important;
+        padding-left: 1rem;
+    }
+
+    .app-p h3 {
+
+        width: 100% !important;
+        padding-left: 1rem;
+        font-size: 1.4rem;
+
+    }
+
+    .app-p p {
+
+        margin: 0 auto !important;
+    }
+
+    .app-store-logo {
+
+        width: 50%;
+        margin-top: 1.2rem !important;
+    }
+
+    .quality-section h2 {
+
+        font-size: 2rem !important;
+
+    }
+
+    .quality-section h3 {
+
+        font-size: 1.6rem;
+        font-weight: 400 !important;
+    }
+
+    .quality-section p {
+
+        font-size: 0.9rem !important;
+        margin-bottom: -1rem !important;
+    }
+
+    .quality-section h1 button {
+
+        font-size: 0.8rem !important;
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.8rem !important;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+
+
+    .pillow {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
 
 
@@ -244,7 +420,7 @@ b {
 
 footer {
 
-    height: 110vh;
+    height: 110vh !important;
     margin-top: 5rem !important;
     background-image: linear-gradient(rgba(0, 0, 0, 0.643), rgba(0, 0, 0, 0.612)), url(footer.png);
     background-position: center;

@@ -18,14 +18,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="ajays.css">
+    <link rel="stylesheet" href="ajaySmallmobile.css">
 
 </head>
 
 <body>
 
+    <!-- header-section -->
 
     <header>
-        <div class="container-fluid position-fixed z-index-1" style="background-color:var(--primary-color);">
+        <div id="navbar" class="container-fluid position-fixed z-index-1"
+            style="background-color:var(--primary-color);">
             <div class="container">
                 <nav class="navbar navbar-expand-lg d-flex justify-content-between">
                     <div class="container-fluid ">
@@ -63,7 +66,8 @@
                                     <a class="nav-link ">BLOG/NEWS</a>
                                 </li>
                             </ul>
-                            <button class="btn btn-outline-success rounded-5 px-4 head-btn" type="submit">CONTECT
+                            <button id="navBtn" class="btn btn-outline-success rounded-5 px-4 head-btn "
+                                type="submit">CONTECT
                                 US</button>
 
                         </div>
@@ -78,9 +82,7 @@
     <!-- main page section -->
     <section>
         <div class="container-fluid menu-img">
-            <img src="AjaysHome.png" class="w-100" alt="">
-            <div class="container">
-            </div>
+            <img src="AjaysHome.png"  alt="">
         </div>
     </section>
 
@@ -89,8 +91,8 @@
         <div class="container-fluid main-section">
             <div class="container">
                 <div class="row xs-screen">
-                    <div class="col col-lg-6 col-md-8 col-sm-12 d-flex  align-item-center">
-                        <div class="col-lg-12 menu-list ">
+                    <div class="col col-lg-6 col-md-8 col-sm-12 d-flex align-item-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 menu-list ">
                             <h4 class="h1">
                                 We Serve Food That is <br> Good, Affordable And <br> Accessible To All
                             </h4>
@@ -213,7 +215,7 @@
         style="background-color:var(--primary-color) ; padding-top: 8rem; padding-bottom: 6rem; ; margin-top: 6rem;">
         <div class="container ">
             <div class="row selling-row">
-                <div class="col col-lg-3 col-md-6 col-sm-6 align-item-center">
+                <div class="col col-lg-3 col-md-6 col-sm-6 align-item-center ">
                     <div class="flex">
                         <h3 style="font-size: 2.7rem;">10,500+</h3>
                         <p style="font-size: 1.1rem;">Cold Coffe Per Day</p>
@@ -246,10 +248,10 @@
 
     <section class="quality-item">
         <div class="container">
-            <div class="quality-section-title text-center mt-5 pt-3">
+            <div class="quality-section-title text-center">
                 <span style="color: var(--primary-color); font-weight: 400; font-size: 2rem;"> what we
                     believe !</span>
-                <div class="h1 fw-bold pt-3 pb-3" style="font-size: 3rem;">Our Pillars Of Prosperity</div>
+                <div class="h1 fw-bold" style="font-size: 3rem;">Our Pillars Of Prosperity</div>
                 <p class=" text-center text-dark mb-5" style="margin: 0 auto; max-width: 60%;">We have come a long way
                     and
                     the road
@@ -266,7 +268,7 @@
     <!-- Pillow section -->
     <center>
         <div class="container">
-            <div class="row pb-5">
+            <div class="row pb-5 pillow">
                 <div class="col col-lg-3 col-md-6 col-sm-12">
                     <img src="pillar 01.webp" width="90%" alt="">
                 </div>
@@ -286,7 +288,7 @@
     <!-- Download link -->
     <div class="container-fluid px" style="background-image: url(app-bg.jpg);">
         <div class="container">
-            <div class="row">
+            <div class="row store-link">
                 <div class="col col-lg-6 col-md-8 col-sm-12">
                     <img src="holding_phone.webp" width="90%" alt="">
                 </div>
@@ -319,10 +321,10 @@
     <div class="container-fluid py-5 text-light" style="background-color: var(--primary-color);">
         <div class="franchisee-section">
             <div class="row">
-                <div class="col col-12">
+                <div class="col col-12 quality-section">
                     <h2 class="h1 text-center  py-2 fw-bold" style="font-size: 2.8rem;">Feed Good &
                         Earn Good</h2>
-                    <h4 class="h3 pt-3  text-center fs-bold">Be An Ajay's Good Food
+                    <h4 class="h2 pt-3  text-center fs-bold">Be An Ajay's Good Food
                         Franchisee !
                     </h4>
                     <br>
@@ -335,7 +337,7 @@
                         and we do not say so, our customers say so. Ajay’s Quick Service Restaurants are nonpareil in
                         terms of its value and taste of its Products Served.</p>
                     <br>
-                    <h1 class="text-center">
+                    <h1 class=" text-center">
                         <button class="btn btn-outline-success rounded-5 px-4 py-3 head-btn"
                             style=" margin-top: 1.6rem; letter-spacing: 1.2px;" type="submit"> FRANCHISEE<i
                                 class="fa-solid fa-play ps-1"></i>
@@ -380,7 +382,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container ">
                     <div class="footer-content text-center pt-5">
                         <a href=""> <img src="ajays_logo_footer.png" alt=""></a>
                     </div>
@@ -415,5 +417,30 @@
     </footer>
 
 </body>
+
+
+<script>
+
+    const navbar = document.getElementById("navbar");
+    const headBtn = document.querySelector(".head-btn");
+
+
+    window.addEventListener("scroll", () => {
+
+
+        if (document.documentElement.scrollTop > 200) {
+            navbar.classList.add("headerColor");
+            headBtn.style.backgroundColor = "var(--primary-color)";
+        }
+        else {
+            navbar.classList.remove("headerColor");
+            headBtn.style.backgroundColor = "var(--secondary-color)";
+        }
+
+
+    });
+
+</script>
+
 
 </html>
